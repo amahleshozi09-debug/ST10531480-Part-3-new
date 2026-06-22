@@ -1,0 +1,350 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'poppins', sans-serif;
+    background:#f4f6f8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    background:#004aad;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+header h2{
+    margin-bottom:5px;
+}
+
+header p{
+    font-style:italic;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+    margin-top:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+nav ul a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav ul a:hover{
+    background:white;
+    color:#004aad;
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+main h1{
+    color:#004aad;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+main h2{
+    color:#004aad;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+main p{
+    margin-bottom:15px;
+}
+
+/* ==========================
+   IMAGES
+========================== */
+
+main img,
+#services img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    margin:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+#services{
+    padding:40px 20px;
+}
+
+#services h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#services h3{
+    color:black;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:black;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#004aad;
+    color:black;
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+form{
+    max-width:600px;
+    margin:20px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea,
+form select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus{
+    outline:none;
+    border-color:#004aad;
+}
+
+form input[type="submit"],
+button{
+    background:#004aad;
+    color:black;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+form input[type="submit"]:hover,
+button:hover{
+    background:#002f70;
+}
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+iframe{
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+.testimonials{
+padding:40px;
+background:white;
+}
+
+.review{
+background:#f4f4f4;
+padding:20px;
+margin:15px;
+border-left:5px solid #004aad;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#00357d;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    header h2{
+        font-size:1.2rem;
+    }
+
+    main{
+        padding:20px 15px;
+    }
+}
+
+.btn{
+    display:inline-block;
+    background:#004aad;
+    color:white;
+    padding:12px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.btn:hover{
+    background:#002f70;
+}
+.hero-buttons{
+    margin-top:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#004aad;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-right:15px;
+}
+
+.btn:hover{
+    background:black;
+}
+
+.btn2{
+    background:#28a745;
+}
+nav a:hover{
+    color:#ffd700;
+}
+img{
+    transition:0.4s;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:50%;
+    cursor:pointer;
+}
+#loader{
+width:50px;
+height:50px;
+border:5px solid lightgray;
+border-top:5px solid #004aad;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:auto;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+input,
+textarea,
+select{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid gray;
+margin-bottom:15px;
+}
+
+input:focus,
+textarea:focus{
+border-color:#004aad;
+outline:none;
+}
+.whatsapp-button{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:30px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
